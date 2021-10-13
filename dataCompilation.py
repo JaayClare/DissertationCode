@@ -66,8 +66,5 @@ if __name__ == '__main__':
     # Add weather to the master dataframe and save as csv
     df = add_weather_to_dataframe(df, wind_directions, cumulative_conditions)
 
-    df.info()
-    print(df[['dest_airport', 'tail_num']].head())
-
     # Exporting the master file to CSV
     df.to_csv('/Users/jamesclare/Documents/Python/DissertationCode/FullfileEncoded.csv', index=False)
